@@ -93,6 +93,12 @@ export function SiteFooter() {
         <p className="mt-6 text-center text-xs">
           Tapayz Corp {new Date().getFullYear()} All Rights Reserved
         </p>
+        <p className="mt-2 text-center text-[10px] text-zinc-400">
+          Build{" "}
+          {process.env.VERCEL_GIT_COMMIT_SHA
+            ? process.env.VERCEL_GIT_COMMIT_SHA.slice(0, 7)
+            : "local"}
+        </p>
       </div>
     </footer>
   );
