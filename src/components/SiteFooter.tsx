@@ -1,7 +1,7 @@
 export function SiteFooter() {
   return (
     <footer className="mt-auto border-t border-black/10 bg-white py-12 text-sm text-zinc-500 dark:border-white/10 dark:bg-black dark:text-zinc-300">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 md:grid-cols-3">
+      <div className="mx-auto grid w-full min-w-0 max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-3">
         <div>
           <img
             src="/uploads/2025/01/Asset-1.png"
@@ -13,17 +13,18 @@ export function SiteFooter() {
             seamlessly converting assets for daily usage while safeguarding your
             privacy and earning cryptoback.
           </p>
-          <div className="mt-4 flex items-center gap-3">
-            <a href="#" className="hover:text-black dark:hover:text-white">
-              Facebook
+          <p className="mt-4 text-sm">
+            <a
+              href="/contact"
+              className="text-zinc-600 underline-offset-4 hover:text-black hover:underline dark:hover:text-white"
+            >
+              Contact us
             </a>
-            <a href="#" className="hover:text-black dark:hover:text-white">
-              X
-            </a>
-            <a href="#" className="hover:text-black dark:hover:text-white">
-              Instagram
-            </a>
-          </div>
+            <span className="text-zinc-400"> · </span>
+            <span className="text-zinc-500">
+              News and support channels are shared through official correspondence.
+            </span>
+          </p>
         </div>
 
         <div>
@@ -87,10 +88,10 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 w-full max-w-6xl px-6">
+      <div className="mx-auto mt-10 w-full min-w-0 max-w-6xl px-4 sm:px-6">
         <div className="h-px w-full bg-black/10 dark:bg-white/10" />
         <p className="mt-6 text-center text-xs">
-          Anytap {new Date().getFullYear()} All Rights Reserved
+          Tapayz Corp {new Date().getFullYear()} All Rights Reserved
         </p>
       </div>
     </footer>

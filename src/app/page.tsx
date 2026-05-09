@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <div className="bg-[#f3f3f3] text-black">
       <section className="border-b border-black/5">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-14 md:grid-cols-2 md:py-20">
-          <div className="order-2 md:order-1">
+        <div className="mx-auto grid w-full min-w-0 max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-20">
+          <div className="order-2 min-w-0 md:order-1">
             <h1 className="text-center text-2xl font-semibold tracking-tight text-zinc-600 md:text-left md:text-3xl">
               Trusted Payments, Limitless Opportunities
             </h1>
@@ -18,22 +18,22 @@ export default function Home() {
                 ORDER NOW
               </a>
             </div>
-            <div className="mt-8 flex justify-center md:justify-start">
-             
-            </div>
           </div>
 
-          <div className="order-1 flex justify-center md:order-2">
-            <div className="relative h-[260px] w-[340px] md:h-[320px] md:w-[420px]">
+          <div className="order-1 flex min-w-0 w-full justify-center md:order-2">
+            <div
+              className="relative mx-auto w-full max-w-[420px]"
+              style={{ aspectRatio: "340 / 260" }}
+            >
               <img
                 src="/uploads/2025/01/image-6.png"
-                alt="Tapayz app"
-                className="absolute left-0 top-0 h-full w-auto object-contain"
+                alt="Anytap app"
+                className="absolute left-0 top-1/2 max-h-[92%] w-[58%] max-w-[58%] -translate-y-1/2 object-contain object-left"
               />
               <img
                 src="/uploads/2025/01/card_main_1.png"
                 alt="Anytap card"
-                className="absolute right-0 top-14 h-[50%] w-auto object-contain"
+                className="absolute right-[2%] top-[28%] max-h-[52%] w-[44%] max-w-[44%] object-contain object-right"
               />
             </div>
           </div>
@@ -41,60 +41,59 @@ export default function Home() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-80">
+        <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-8 sm:px-6">
+          <div className="flex w-full min-w-0 flex-col items-center justify-center gap-6 opacity-80 sm:flex-row sm:flex-wrap sm:gap-x-10 sm:gap-y-4">
             <img
               src="/uploads/2025/01/Group-7.png"
               alt="Partner logo strip"
-              className="h-7 w-auto"
+              className="h-auto max-h-8 w-full object-contain sm:h-7 sm:w-auto sm:max-w-full"
             />
             <img
               src="/uploads/2025/01/Group-16.png"
               alt="Partner logo strip 2"
-              className="h-40 w-auto"
+              className="h-auto max-h-28 w-full object-contain sm:max-h-40 sm:w-auto sm:max-w-full"
             />
           </div>
         </div>
       </section>
 
       <section className="bg-[#3a3a3a] text-white">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-14 md:grid-cols-2 md:py-20">
-          <div className="flex justify-center">
+        <div className="mx-auto grid w-full min-w-0 max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-20">
+          <div className="flex w-full min-w-0 justify-center">
             <video
               src="/uploads/2025/01/KakaoTalk_20250117_083000936_1.mp4"
-              className="h-auto w-full max-w-[320px] rounded-xl bg-black shadow-lg"
+              className="h-auto w-full max-w-md rounded-xl bg-black object-contain shadow-lg"
               autoPlay
               muted
               loop
               playsInline
             />
           </div>
-          <div>
+          <div className="min-w-0 w-full">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               Pay anytime <br />
               anywhere with your <br />
-              Crypto or Flat.
+              Crypto or Fiat.
             </h2>
             <p className="mt-4 max-w-md text-sm leading-6 text-white/80">
-              Anytap 카드로 간편하게 결제하고, 
-              필요한 곳에서 언제든 사용할 수 있도록 돕습니다.
+              Pay easily with your Anytap card and use your balance wherever you
+              need it, whenever you need it.
             </p>
           </div>
         </div>
       </section>
 
       <section className="bg-[#2E86FF] text-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-16">
+        <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 sm:px-6">
           <h2 className="text-center text-2xl font-semibold tracking-tight md:text-3xl">
             Why should you elect an Anytap card?
           </h2>
-        
 
           <div className="mx-auto mt-10 grid max-w-4xl gap-4 text-sm md:grid-cols-2">
             {[
-              "Fast and easy Membership Process",
-              "Your Card Delivery (3-5 days)",
-              "Connecting fees",
+              "Fast and easy membership process",
+              "Your card delivery (3–5 days)",
+              "Competitive fees",
               "No hidden fees",
               "Anonymous card",
               "High balance limits",
@@ -113,18 +112,18 @@ export default function Home() {
       </section>
 
       <section className="bg-[#0e2d3e] text-white">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-6 py-14 md:grid-cols-2 md:py-20">
-          <div className="flex justify-center">
+        <div className="mx-auto grid w-full min-w-0 max-w-6xl items-center gap-8 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-20">
+          <div className="flex w-full min-w-0 justify-center">
             <video
               src="/uploads/2025/01/KakaoTalk_20250117_112844678.mp4"
-              className="h-auto w-full max-w-[320px] rounded-xl bg-black shadow-lg"
+              className="h-auto w-full max-w-md rounded-xl bg-black object-contain shadow-lg"
               autoPlay
               muted
               loop
               playsInline
             />
           </div>
-          <div>
+          <div className="min-w-0 w-full">
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
               How can I apply for an Anytap card?
             </h2>
@@ -148,16 +147,18 @@ export default function Home() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-8 px-6 py-12 md:grid-cols-4">
+        <div className="mx-auto grid w-full min-w-0 max-w-6xl grid-cols-2 gap-4 px-4 py-12 sm:gap-8 sm:px-6 md:grid-cols-4">
           {[
             { value: "170+", label: "Supported countries" },
             { value: "50+", label: "Fiat currencies supported" },
             { value: "300+", label: "Fiat payments per month" },
             { value: "ALL", label: "Cryptocurrencies supported" },
           ].map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="text-2xl font-semibold">{s.value}</div>
-              <div className="mt-1 text-xs text-zinc-500">{s.label}</div>
+            <div key={s.label} className="min-w-0 text-center">
+              <div className="text-xl font-semibold sm:text-2xl">{s.value}</div>
+              <div className="mt-1 text-[10px] leading-tight text-zinc-500 sm:text-xs">
+                {s.label}
+              </div>
             </div>
           ))}
         </div>

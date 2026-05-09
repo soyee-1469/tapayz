@@ -13,9 +13,9 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <section className="relative px-6 py-16 md:py-24">
-        <div className="mx-auto w-full max-w-4xl">
-          <div className="mx-auto max-w-2xl rounded-2xl bg-white/85 p-10 shadow-xl backdrop-blur">
+      <section className="relative min-w-0 px-4 py-16 sm:px-6 md:py-24">
+        <div className="mx-auto w-full min-w-0 max-w-4xl">
+          <div className="mx-auto max-w-2xl rounded-2xl bg-white/85 p-6 shadow-xl backdrop-blur sm:p-10">
             <p className="text-center text-sm font-medium text-zinc-600">
               Contact
             </p>
@@ -23,7 +23,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="mx-auto mt-4 max-w-lg text-center text-sm leading-6 text-zinc-600">
-              For all inquiries, please contact Tapayz using the form below.
+              For all inquiries, please contact Tapayz Corp using the form below.
             </p>
 
             <form className="mt-10 grid gap-4">
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 type="button"
                 className="mt-2 inline-flex h-12 items-center justify-center bg-black px-6 text-sm font-semibold text-white hover:bg-black/90"
               >
-                Submit (연결 예정)
+                Send message
               </button>
             </form>
           </div>

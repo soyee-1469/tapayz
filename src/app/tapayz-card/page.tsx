@@ -2,8 +2,8 @@ export default function TapayzCardPage() {
   return (
     <div className="bg-[#f3f3f3] text-black">
       <section className="border-b border-black/5 bg-[#dbdbdb]">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-14 md:grid-cols-2 md:py-20">
-          <div>
+        <div className="mx-auto grid w-full min-w-0 max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-20">
+          <div className="min-w-0">
             <p className="text-sm font-medium text-zinc-600">
               Cryptocurrency meets everyday convenience
             </p>
@@ -11,32 +11,58 @@ export default function TapayzCardPage() {
               ANYTAP CARD
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-700">
-              Tapayz has partnered with Alchemypay to issue debit cards that
-              enable seamless and stable cryptocurrency top-ups through a robust
-              technological alliance.
+              Tapayz Corp has partnered with Alchemypay to issue debit cards
+              that enable seamless and stable cryptocurrency top-ups through a
+              robust technology partnership.
             </p>
           </div>
-          <div className="flex justify-center">
+          <div className="flex w-full min-w-0 justify-center">
             <img
               src="/uploads/2025/07/card_2.png"
               alt="Anytap card"
-              className="h-[280px] w-auto object-contain"
+              className="h-auto w-full max-w-md object-contain md:max-w-lg"
             />
           </div>
         </div>
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-16">
+        <div className="mx-auto w-full min-w-0 max-w-6xl px-6 py-16 sm:px-8">
           <h2 className="text-center text-2xl font-semibold tracking-tight">
             Fees &amp; Limits
           </h2>
-          <div className="mt-8 flex justify-center overflow-x-auto">
-            <table className="min-w-[720px] border-collapse text-sm">
+          {/* Mobile: card list (prevents horizontal page scroll) */}
+          <div className="mt-8 grid gap-3 sm:hidden">
+            {[
+              ["Top up fee", "2 %"],
+              ["Max balance at any time", "100,000 EURO"],
+              ["Max monthly transaction limit", "100,000 EURO"],
+              ["Max daily payment limit", "10,000 EURO"],
+              ["Daily Withdrawal Limit", "2,000 EURO"],
+            ].map(([k, v]) => (
+              <div
+                key={k}
+                className="rounded-xl border border-black/10 bg-white p-4"
+              >
+                <div className="text-xs font-medium text-zinc-500">{k}</div>
+                <div className="mt-1 text-sm font-semibold tabular-nums text-zinc-900">
+                  {v}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop/tablet: table */}
+          <div className="mt-8 hidden w-full sm:block">
+            <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b border-black/10 text-left text-zinc-500">
-                  <th className="py-3 pr-6 font-semibold">Item</th>
-                  <th className="py-3 font-semibold">Tapayz</th>
+                  <th className="py-3 pr-6 font-semibold">
+                    Item
+                  </th>
+                  <th className="py-3 font-semibold">
+                    Anytap
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -47,9 +73,13 @@ export default function TapayzCardPage() {
                   ["Max daily payment limit", "10,000 EURO"],
                   ["Daily Withdrawal Limit", "2,000 EURO"],
                 ].map(([k, v]) => (
-                  <tr key={k} className="border-b border-black/10">
-                    <td className="py-3 pr-6">{k}</td>
-                    <td className="py-3 font-semibold">{v}</td>
+                  <tr key={k} className="border-b border-black/10 align-top">
+                    <td className="py-3 pr-6">
+                      {k}
+                    </td>
+                    <td className="py-3 font-semibold tabular-nums">
+                      {v}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -59,12 +89,12 @@ export default function TapayzCardPage() {
       </section>
 
       <section className="bg-[#0e2d3e] text-white">
-        <div className="mx-auto w-full max-w-6xl px-6 py-16">
+        <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 sm:px-6">
           <h2 className="text-center text-2xl font-semibold tracking-tight md:text-3xl">
-            Top Up the cards with Cryptocurrency
+            Top up your card with cryptocurrency
           </h2>
 
-          <div className="mx-auto mt-10 grid max-w-4xl gap-4 text-sm md:grid-cols-5">
+          <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-4 text-sm sm:grid-cols-2 md:grid-cols-5">
             {[
               "Select your preferred card type",
               "Fill in your name and make your first recharge",
@@ -84,11 +114,11 @@ export default function TapayzCardPage() {
             ))}
           </div>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex w-full min-w-0 justify-center px-0">
             <img
-              src="/uploads/2025/01/카드이용순서-2048x782.png"
-              alt="Tapayz steps illustration"
-              className="h-auto w-full max-w-4xl rounded-xl object-contain shadow-lg"
+              src="/uploads/2025/01/card-usage-order-2048x782.png"
+              alt="Card activation and top-up steps"
+              className="h-auto w-full max-w-full rounded-xl object-contain shadow-lg md:max-w-4xl"
             />
           </div>
         </div>

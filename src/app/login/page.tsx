@@ -12,9 +12,9 @@ export default function LoginPage() {
       <div className="mx-auto w-full max-w-md px-4">
         <div className="rounded-2xl border border-zinc-200 bg-white px-8 py-10 shadow-sm">
           <div className="text-center">
-            <h1 className="text-2xl font-semibold tracking-tight">로그인</h1>
+            <h1 className="text-2xl font-semibold tracking-tight">Sign in</h1>
             <p className="mt-2 text-sm text-zinc-500">
-              Anytap 계정으로 로그인하세요
+              Sign in to your Anytap account
             </p>
           </div>
 
@@ -24,7 +24,7 @@ export default function LoginPage() {
                 htmlFor="email"
                 className="mb-1.5 block text-sm font-medium text-zinc-700"
               >
-                이메일
+                Email
               </label>
               <input
                 id="email"
@@ -42,13 +42,13 @@ export default function LoginPage() {
                   htmlFor="password"
                   className="block text-sm font-medium text-zinc-700"
                 >
-                  비밀번호
+                  Password
                 </label>
                 <button
                   type="button"
                   className="text-sm font-medium text-[#2E86FF] hover:text-[#2E86FF]/90"
                 >
-                  비밀번호 찾기
+                  Forgot password?
                 </button>
               </div>
               <input
@@ -69,7 +69,7 @@ export default function LoginPage() {
                 className="h-4 w-4 rounded border-zinc-300 text-[#2E86FF] focus:ring-[#2E86FF]"
               />
               <label htmlFor="remember" className="text-sm text-zinc-600">
-                로그인 상태 유지
+                Keep me signed in
               </label>
             </div>
 
@@ -77,24 +77,21 @@ export default function LoginPage() {
               type="submit"
               className="w-full rounded-lg bg-[#2E86FF] py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#2E86FF]/90"
             >
-              로그인
+              Sign in
             </button>
           </form>
 
           <p className="mt-8 text-center text-sm text-zinc-500">
-            계정이 없으신가요?{" "}
+            Don&apos;t have an account?{" "}
             <button
               type="button"
               className="font-semibold text-[#2E86FF] hover:text-[#2E86FF]/90"
             >
-              회원가입
+              Create account
             </button>
           </p>
         </div>
 
-        <p className="mt-6 text-center text-xs text-zinc-400">
-          데모 페이지입니다. 실제 인증은 연결되어 있지 않습니다.
-        </p>
       </div>
     </div>
   );

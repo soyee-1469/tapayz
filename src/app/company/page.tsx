@@ -11,9 +11,9 @@ export default function CompanyPage() {
         }}
       >
         <div className="bg-black/45">
-          <div className="mx-auto w-full max-w-6xl px-6 py-16 text-white md:py-20">
+          <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 text-white sm:px-6 md:py-20">
             <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-              About TAPAYZ
+              About Tapayz Corp
             </h1>
             <p className="mt-4 text-lg font-medium text-white/90">
               Borderless crypto charge cards
@@ -44,7 +44,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-16">
+      <section className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-6 md:grid-cols-3">
           {[
             {
@@ -53,8 +53,8 @@ export default function CompanyPage() {
               icon: "/uploads/2025/01/Group-1-1.png",
             },
             {
-              title: "Delinquent borrower",
-              body: "A total of 150,000 Korean students are pursuing their studies abroad.",
+              title: "Credit access",
+              body: "When traditional credit channels are limited, consumers still need reliable ways to pay online and while traveling. Prepaid card products can bridge that gap with clear limits and transparent usage.",
               icon: "/uploads/2025/01/Group-2-1.png",
             },
             {
@@ -64,7 +64,7 @@ export default function CompanyPage() {
             },
             {
               title: "Remittance",
-              body: "The estimated amount of remittances from Korea to overseas in 2024 exceeds $28.6 trillion.",
+              body: "Cross-border remittances from Korea remain substantial, with households and businesses seeking faster, lower-friction ways to move value internationally.",
               icon: "/uploads/2025/01/Group-4-1.png",
             },
             {
@@ -73,8 +73,8 @@ export default function CompanyPage() {
               icon: "/uploads/2025/01/Group-8.png",
             },
             {
-              title: "MLM",
-              body: "It is convenient to use because many MLM members provide allowances.",
+              title: "Distributed teams",
+              body: "Organizations with distributed teams and partners often use prepaid cards for allowances, incentives, and controlled spending with predictable limits.",
               icon: "/uploads/2025/01/Vector.png",
             },
           ].map((c) => (
@@ -83,7 +83,11 @@ export default function CompanyPage() {
               className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm"
             >
               <div className="flex items-center gap-3">
-                <img src={c.icon} alt="" className="h-10 w-10 object-contain" />
+                <img
+                  src={c.icon}
+                  alt=""
+                  className="h-10 w-10 shrink-0 object-contain"
+                />
                 <div className="text-base font-semibold">{c.title}</div>
               </div>
               <p className="mt-4 whitespace-pre-wrap text-sm leading-6 text-zinc-600">
