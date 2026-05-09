@@ -58,7 +58,7 @@ function MenuIcon({ open }: { open: boolean }) {
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(() => readIsDesktop());
   const pathname = usePathname();
 
   useLayoutEffect(() => {
@@ -73,6 +73,10 @@ export function SiteHeader() {
       window.removeEventListener("resize", apply);
     };
   }, []);
+
+  useEffect(() => {
+    if (isDesktop) setOpen(false);
+  }, [isDesktop]);
 
   useEffect(() => {
     setOpen(false);

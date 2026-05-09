@@ -53,8 +53,8 @@ export default function TapayzCardPage() {
           </div>
 
           {/* Desktop/tablet: table */}
-          <div className="mt-8 hidden w-full sm:block">
-            <table className="w-full border-collapse text-sm">
+          <div className="mt-8 hidden w-full overflow-x-auto sm:block [-webkit-overflow-scrolling:touch]">
+            <table className="min-w-[640px] w-full table-auto border-collapse text-sm">
               <thead>
                 <tr className="border-b border-black/10 text-left text-zinc-500">
                   <th className="py-3 pr-6 font-semibold">
@@ -77,7 +77,7 @@ export default function TapayzCardPage() {
                     <td className="py-3 pr-6">
                       {k}
                     </td>
-                    <td className="py-3 font-semibold tabular-nums">
+                    <td className="py-3 font-semibold tabular-nums whitespace-nowrap">
                       {v}
                     </td>
                   </tr>
