@@ -8,7 +8,7 @@ export default function TapayzCardPage() {
               Cryptocurrency meets everyday convenience
             </p>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-[#2E86FF] md:text-5xl">
-              TAPAYZ CARD
+              ANYTAP CARD
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-700">
               Tapayz has partnered with Alchemypay to issue debit cards that
@@ -19,7 +19,7 @@ export default function TapayzCardPage() {
           <div className="flex justify-center">
             <img
               src="/uploads/2025/07/card_2.png"
-              alt="Tapayz card"
+              alt="Anytap card"
               className="h-[280px] w-auto object-contain"
             />
           </div>

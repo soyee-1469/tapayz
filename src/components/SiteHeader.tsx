@@ -4,7 +4,7 @@ import Image from "next/image";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/company", label: "Company" },
-  { href: "/tapayz-card", label: "Tapayz Card" },
+  { href: "/tapayz-card", label: "Anytap Card" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
@@ -15,7 +15,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/uploads/2025/01/Asset-1.png"
-            alt="Tapayz"
+            alt="Anytap"
             width={82}
             height={22}
             priority

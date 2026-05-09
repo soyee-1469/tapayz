@@ -8,7 +8,7 @@ export default function Home() {
               Trusted Payments, Limitless Opportunities
             </h1>
             <p className="mt-3 text-center text-2xl font-semibold tracking-tight text-[#2E86FF] md:text-left md:text-3xl">
-              TAPAYZ CARD
+              ANYTAP CARD
             </p>
             <div className="mt-6 flex justify-center md:justify-start">
               <a
@@ -32,7 +32,7 @@ export default function Home() {
               />
               <img
                 src="/uploads/2025/01/card_main_1.png"
-                alt="Tapayz card"
+                alt="Anytap card"
                 className="absolute right-0 top-14 h-[50%] w-auto object-contain"
               />
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
               Crypto or Flat.
             </h2>
             <p className="mt-4 max-w-md text-sm leading-6 text-white/80">
-              Tapayz 카드로 간편하게 결제하고, 
+              Anytap 카드로 간편하게 결제하고, 
               필요한 곳에서 언제든 사용할 수 있도록 돕습니다.
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
       <section className="bg-[#2E86FF] text-white">
         <div className="mx-auto w-full max-w-6xl px-6 py-16">
           <h2 className="text-center text-2xl font-semibold tracking-tight md:text-3xl">
-            Why should you elect a Tapayz card?
+            Why should you elect an Anytap card?
           </h2>
         
 
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div>
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-              How can I apply for a Tapayz card?
+              How can I apply for an Anytap card?
             </h2>
             <ul className="mt-6 space-y-3 text-sm text-white/85">
               {[

@@ -5,11 +5,11 @@ export function SiteFooter() {
         <div>
           <img
             src="/uploads/2025/01/Asset-1.png"
-            alt="Tapayz"
+            alt="Anytap"
             className="h-6 w-auto"
           />
           <p className="mt-4 max-w-sm leading-6">
-            TAPAYZ simplifies cryptocurrency spending with Tapayz cards,
+            Anytap simplifies cryptocurrency spending with Anytap cards,
             seamlessly converting assets for daily usage while safeguarding your
             privacy and earning cryptoback.
           </p>
@@ -90,7 +90,7 @@ export function SiteFooter() {
       <div className="mx-auto mt-10 w-full max-w-6xl px-6">
         <div className="h-px w-full bg-black/10 dark:bg-white/10" />
         <p className="mt-6 text-center text-xs">
-          Tapayz {new Date().getFullYear()} All Rights Reserved
+          Anytap {new Date().getFullYear()} All Rights Reserved
         </p>
       </div>
     </footer>
