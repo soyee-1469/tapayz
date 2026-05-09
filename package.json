@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import:uploads": "node scripts/import-uploads.mjs",
+    "extract:divi": "node scripts/extract-divi-assets.mjs"
   },
   "dependencies": {
     "next": "16.2.4",
