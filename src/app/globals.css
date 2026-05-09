@@ -37,3 +37,19 @@ img,
 video {
   max-width: 100%;
 }
+
+/* Header breakpoint: force hamburger below 1200px */
+.anytap-desktop-nav {
+  display: none !important;
+}
+.anytap-mobile-toggle {
+  display: inline-flex !important;
+}
+@media (min-width: 1200px) {
+  .anytap-desktop-nav {
+    display: flex !important;
+  }
+  .anytap-mobile-toggle {
+    display: none !important;
+  }
+}

@@ -95,7 +95,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full min-w-0 overflow-x-hidden bg-white/75 backdrop-blur dark:bg-black/40">
-      <div className="relative z-[60] mx-auto flex w-full min-w-0 max-w-6xl items-center justify-between gap-3 bg-white/75 px-4 py-4 backdrop-blur sm:px-6 dark:bg-black/40">
+      <div className="relative z-[60] mx-auto flex w-full min-w-0 max-w-6xl items-center gap-3 bg-white/75 px-4 py-4 backdrop-blur sm:px-6 dark:bg-black/40">
         <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2">
           <Image
             src="/uploads/2025/01/Asset-1.png"
@@ -106,12 +106,10 @@ export function SiteHeader() {
           />
         </Link>
 
-        {/* Desktop: horizontal links only (hidden below 768px via inline style + class) */}
+        {/* Desktop: centered horizontal links (>=1200px via CSS) */}
         <nav
-          className="min-w-0 items-center gap-3 text-sm text-zinc-700 sm:gap-4 dark:text-zinc-200"
-          style={{ display: isDesktop ? "flex" : "none" }}
+          className="anytap-desktop-nav min-w-0 flex-1 items-center justify-center gap-3 text-sm text-zinc-700 sm:gap-4 dark:text-zinc-200"
           aria-label="Main"
-          aria-hidden={!isDesktop}
         >
           {navItems.map((item) => (
             <Link
@@ -136,15 +134,13 @@ export function SiteHeader() {
           </Link>
         </nav>
 
-        {/* Mobile: hamburger only (hidden on desktop) */}
+        {/* Mobile: hamburger only (<1200px via CSS) */}
         <button
           type="button"
-          className="shrink-0 rounded-md p-2 text-zinc-800 hover:bg-black/5 dark:text-zinc-100 dark:hover:bg-white/10"
-          style={{ display: isDesktop ? "none" : "inline-flex" }}
+          className="anytap-mobile-toggle shrink-0 rounded-md p-2 text-zinc-800 hover:bg-black/5 dark:text-zinc-100 dark:hover:bg-white/10"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          aria-hidden={isDesktop}
           onClick={() => setOpen((v) => !v)}
         >
           <MenuIcon open={open} />
