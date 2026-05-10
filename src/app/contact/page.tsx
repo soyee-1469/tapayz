@@ -8,7 +8,7 @@ export default function ContactPage() {
           muted
           loop
           playsInline
-          src="/images/853844-hd_1920_1080_25fps.mp4"
+          src="/images/contact-hero-background.mp4"
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>
