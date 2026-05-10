@@ -56,10 +56,12 @@ function extractFromBuilderString(builder) {
 }
 
 function toNextPublicPath(url) {
-  // https://tapayz.com/wp-content/uploads/2025/01/foo.png -> /uploads/2025/01/foo.png
+  // https://tapayz.com/wp-content/uploads/2025/01/foo.png -> /images/foo.png
   const idx = url.indexOf("/wp-content/uploads/");
   if (idx === -1) return url;
-  return url.slice(idx + "/wp-content".length);
+  const afterUploads = url.slice(idx + "/wp-content/uploads/".length);
+  const base = afterUploads.split("/").pop();
+  return `/images/${base}`;
 }
 
 async function main() {

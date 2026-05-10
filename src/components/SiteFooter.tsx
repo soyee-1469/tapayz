@@ -4,7 +4,7 @@ export function SiteFooter() {
       <div className="mx-auto grid w-full min-w-0 max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-3">
         <div>
           <img
-            src="/uploads/2025/01/Asset-1.png"
+            src="/images/Asset-1.png"
             alt="Anytap"
             className="h-6 w-auto"
           />
@@ -71,11 +71,11 @@ export function SiteFooter() {
           </ul>
           <div className="mt-6 flex items-center gap-2">
             {[
-              "/uploads/2025/01/Group-11-1.png",
-              "/uploads/2025/01/Group-12-1.png",
-              "/uploads/2025/01/Group-13-1.png",
-              "/uploads/2025/01/Group-14-1.png",
-              "/uploads/2025/01/Group-15.png",
+              "/images/Group-11-1.png",
+              "/images/Group-12-1.png",
+              "/images/Group-13-1.png",
+              "/images/Group-14-1.png",
+              "/images/Group-15.png",
             ].map((src) => (
               <img
                 key={src}

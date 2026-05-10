@@ -18,7 +18,7 @@ export default function TapayzCardPage() {
           </div>
           <div className="flex w-full min-w-0 justify-center">
             <img
-              src="/uploads/2025/07/card_2.png"
+              src="/images/card_2.png"
               alt="Anytap card"
               className="h-auto w-full max-w-md object-contain md:max-w-lg"
             />
@@ -116,7 +116,7 @@ export default function TapayzCardPage() {
 
           <div className="mt-10 flex w-full min-w-0 justify-center px-0">
             <img
-              src="/uploads/2025/01/card-usage-order-2048x782.png"
+              src="/images/card-usage-order-2048x782.png"
               alt="Card activation and top-up steps"
               className="h-auto w-full max-w-full rounded-xl object-contain shadow-lg md:max-w-4xl"
             />

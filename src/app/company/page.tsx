@@ -5,7 +5,7 @@ export default function CompanyPage() {
         className="bg-[#efefef]"
         style={{
           backgroundImage:
-            'url("/uploads/2025/01/3a3062f9-af74-43e5-b63e-60ce2b1a7164-1-1080x572.png")',
+            'url("/images/3a3062f9-af74-43e5-b63e-60ce2b1a7164-1-1080x572.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -50,32 +50,32 @@ export default function CompanyPage() {
             {
               title: "Study abroad",
               body: "A total of 150,000 Korean students are pursuing their studies abroad.",
-              icon: "/uploads/2025/01/Group-1-1.png",
+              icon: "/images/Group-1-1.png",
             },
             {
               title: "Credit access",
               body: "When traditional credit channels are limited, consumers still need reliable ways to pay online and while traveling. Prepaid card products can bridge that gap with clear limits and transparent usage.",
-              icon: "/uploads/2025/01/Group-2-1.png",
+              icon: "/images/Group-2-1.png",
             },
             {
               title: "Online Shopper",
               body: "Overseas shopping transactions amounted to $5.6 billion in 2024.",
-              icon: "/uploads/2025/01/Group-3-1.png",
+              icon: "/images/Group-3-1.png",
             },
             {
               title: "Remittance",
               body: "Cross-border remittances from Korea remain substantial, with households and businesses seeking faster, lower-friction ways to move value internationally.",
-              icon: "/uploads/2025/01/Group-4-1.png",
+              icon: "/images/Group-4-1.png",
             },
             {
               title: "Community",
               body: "Online finance-related communities are highly active.",
-              icon: "/uploads/2025/01/Group-8.png",
+              icon: "/images/Group-8.png",
             },
             {
               title: "Distributed teams",
               body: "Organizations with distributed teams and partners often use prepaid cards for allowances, incentives, and controlled spending with predictable limits.",
-              icon: "/uploads/2025/01/Vector.png",
+              icon: "/images/Vector.png",
             },
           ].map((c) => (
             <div

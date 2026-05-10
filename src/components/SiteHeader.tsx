@@ -98,7 +98,7 @@ export function SiteHeader() {
       <div className="relative z-[60] mx-auto flex w-full min-w-0 max-w-6xl items-center justify-between gap-3 bg-white/75 px-4 py-4 backdrop-blur sm:px-6 dark:bg-black/40">
         <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2">
           <Image
-            src="/uploads/2025/01/Asset-1.png"
+            src="/images/Asset-1.png"
             alt="Anytap"
             width={82}
             height={22}

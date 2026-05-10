@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "import:uploads": "node scripts/import-uploads.mjs",
+    "import:images": "node scripts/import-uploads.mjs",
     "extract:divi": "node scripts/extract-divi-assets.mjs"
   },
   "dependencies": {

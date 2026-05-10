@@ -26,12 +26,12 @@ export default function Home() {
               style={{ aspectRatio: "340 / 260" }}
             >
               <img
-                src="/uploads/2025/01/image-6.png"
+                src="/images/image-6.png"
                 alt="Anytap app"
                 className="absolute left-0 top-1/2 max-h-[92%] w-[58%] max-w-[58%] -translate-y-1/2 object-contain object-left"
               />
               <img
-                src="/uploads/2025/01/card_main_1.png"
+                src="/images/card_main_1.png"
                 alt="Anytap card"
                 className="absolute right-[2%] top-[28%] max-h-[52%] w-[44%] max-w-[44%] object-contain object-right"
               />
@@ -44,12 +44,12 @@ export default function Home() {
         <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-8 sm:px-6">
           <div className="flex w-full min-w-0 flex-col items-center justify-center gap-6 opacity-80 sm:flex-row sm:flex-wrap sm:gap-x-10 sm:gap-y-4">
             <img
-              src="/uploads/2025/01/Group-7.png"
+              src="/images/Group-7.png"
               alt="Partner logo strip"
               className="h-auto max-h-8 w-full object-contain sm:h-7 sm:w-auto sm:max-w-full"
             />
             <img
-              src="/uploads/2025/01/Group-16.png"
+              src="/images/Group-16.png"
               alt="Partner logo strip 2"
               className="h-auto max-h-28 w-full object-contain sm:max-h-40 sm:w-auto sm:max-w-full"
             />
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="mx-auto grid w-full min-w-0 max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-20">
           <div className="flex w-full min-w-0 justify-center">
             <video
-              src="/uploads/2025/01/KakaoTalk_20250117_083000936_1.mp4"
+              src="/images/KakaoTalk_20250117_083000936_1.mp4"
               className="h-auto w-full max-w-md rounded-xl bg-black object-contain shadow-lg"
               autoPlay
               muted
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="mx-auto grid w-full min-w-0 max-w-6xl items-center gap-8 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-20">
           <div className="flex w-full min-w-0 justify-center">
             <video
-              src="/uploads/2025/01/KakaoTalk_20250117_112844678.mp4"
+              src="/images/KakaoTalk_20250117_112844678.mp4"
               className="h-auto w-full max-w-md rounded-xl bg-black object-contain shadow-lg"
               autoPlay
               muted

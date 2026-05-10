@@ -3,24 +3,27 @@ import path from "node:path";
 
 const repoRoot = path.resolve(process.cwd());
 const wpUploads = path.resolve(repoRoot, "..", "wp-content", "uploads");
-const outDir = path.resolve(repoRoot, "public", "uploads");
+const outDir = path.resolve(repoRoot, "public", "images");
 
-async function copyDir(src, dest) {
-  await fs.mkdir(dest, { recursive: true });
-  const entries = await fs.readdir(src, { withFileTypes: true });
+async function copyFlatIntoImages(srcDir, destDir) {
+  await fs.mkdir(destDir, { recursive: true });
 
-  for (const entry of entries) {
-    const srcPath = path.join(src, entry.name);
-    const destPath = path.join(dest, entry.name);
-
-    if (entry.isDirectory()) {
-      await copyDir(srcPath, destPath);
-    } else if (entry.isFile()) {
-      await fs.copyFile(srcPath, destPath);
+  async function walk(dir) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const srcPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        await walk(srcPath);
+      } else if (entry.isFile()) {
+        const destPath = path.join(destDir, entry.name);
+        await fs.copyFile(srcPath, destPath);
+      }
     }
   }
+
+  await walk(srcDir);
 }
 
-await copyDir(wpUploads, outDir);
-console.log(`Copied WP uploads → ${path.relative(repoRoot, outDir)}`);
+await copyFlatIntoImages(wpUploads, outDir);
+console.log(`Copied WP uploads (flat) → ${path.relative(repoRoot, outDir)}`);
 
