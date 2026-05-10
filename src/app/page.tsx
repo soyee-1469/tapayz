@@ -88,23 +88,40 @@ export default function Home() {
           <h2 className="text-center text-2xl font-semibold tracking-tight md:text-3xl">
             Why should you elect an Anytap card?
           </h2>
+          <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-white/90 sm:text-[15px]">
+            Indulge in global disbursements, both in the digital and physical
+            realms, at an expansive network surpassing one million purveyors.
+            Leverage Anytap cards to unlock the latent potential of your
+            cryptographic holdings, affording unparalleled adaptability and
+            effortless access to liquid funds whenever and wherever your needs
+            require.
+          </p>
 
-          <div className="mx-auto mt-10 grid max-w-4xl gap-4 text-sm md:grid-cols-2">
-            {[
-              "Fast and easy membership process",
-              "Your card delivery (3–5 days)",
-              "Competitive fees",
-              "No hidden fees",
-              "Anonymous card",
-              "High balance limits",
-              "Marketplace service",
-              "Worldwide payments",
-            ].map((t) => (
-              <div key={t} className="flex items-start gap-3">
-                <span className="mt-1 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-white/20">
-                  ✓
-                </span>
-                <span className="text-white/95">{t}</span>
+          <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-8 md:grid-cols-4 md:gap-x-10">
+            {(
+              [
+                { n: 1, label: "Streamlined Membership Process" },
+                { n: 2, label: "Fast Card Delivery (2–3 days)" },
+                { n: 3, label: "Competitive fees" },
+                { n: 4, label: "No hidden fees" },
+                { n: 5, label: "Anonymous Card" },
+                { n: 6, label: "High balance limits" },
+                { n: 7, label: "Multilingual service" },
+                { n: 8, label: "24/7 support" },
+              ] as const
+            ).map(({ n, label }) => (
+              <div
+                key={n}
+                className="flex min-w-0 flex-col items-center gap-3 text-center"
+              >
+                <img
+                  src={`/images/why_img${n}.png`}
+                  alt=""
+                  className="h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20"
+                />
+                <p className="text-xs font-medium leading-snug text-white/95 sm:text-sm">
+                  {label}
+                </p>
               </div>
             ))}
           </div>
