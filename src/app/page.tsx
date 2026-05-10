@@ -7,13 +7,13 @@ export default function Home() {
             <h1 className="text-center text-2xl font-semibold tracking-tight text-zinc-600 md:text-left md:text-3xl">
               Trusted Payments, Limitless Opportunities
             </h1>
-            <p className="mt-3 text-center text-2xl font-semibold tracking-tight text-[#2E86FF] md:text-left md:text-3xl">
+            <p className="mt-3 text-center text-2xl font-semibold tracking-tight text-[#ea580c] md:text-left md:text-3xl">
               ANYTAP CARD
             </p>
             <div className="mt-6 flex justify-center md:justify-start">
               <a
                 href="/tapayz-card"
-                className="inline-flex h-11 items-center justify-center rounded-md bg-[#2E86FF] px-6 text-sm font-semibold text-white shadow-sm hover:bg-[#2E86FF]/90"
+                className="inline-flex h-11 items-center justify-center rounded-md bg-[#ea580c] px-6 text-sm font-semibold text-white shadow-sm hover:bg-[#c2410c]"
               >
                 ORDER NOW
               </a>
@@ -21,26 +21,16 @@ export default function Home() {
           </div>
 
           <div className="order-1 flex min-w-0 w-full justify-center md:order-2">
-            <div
-              className="relative mx-auto w-full max-w-[420px]"
-              style={{ aspectRatio: "340 / 260" }}
-            >
-              <img
-                src="/images/hero-app-mockup.png"
-                alt="Anytap app"
-                className="absolute left-0 top-1/2 max-h-[92%] w-[58%] max-w-[58%] -translate-y-1/2 object-contain object-left"
-              />
-              <img
-                src="/images/hero-anytap-card.png"
-                alt="Anytap card"
-                className="absolute right-[2%] top-[28%] max-h-[52%] w-[44%] max-w-[44%] object-contain object-right"
-              />
-            </div>
+            <img
+              src="/images/main_img.png"
+              alt="Anytap"
+              className="h-auto w-full max-w-[588px] object-contain"
+            />
           </div>
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="border-b border-black/5 bg-white">
         <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-8 sm:px-6">
           <div className="flex w-full min-w-0 flex-col items-center justify-center gap-6 opacity-80 sm:flex-row sm:flex-wrap sm:gap-x-10 sm:gap-y-4">
             <img
@@ -83,7 +73,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#2E86FF] text-white">
+      <section className="bg-[#ea580c] text-white">
         <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 sm:px-6">
           <h2 className="text-center text-2xl font-semibold tracking-tight md:text-3xl">
             Why should you elect an Anytap card?
@@ -97,7 +87,7 @@ export default function Home() {
             require.
           </p>
 
-          <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-8">
+          <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-y-8">
             {(
               [
                 { n: 1, label: "Streamlined Membership Process" },
@@ -150,10 +140,13 @@ export default function Home() {
                 "Upload and verify documents",
                 "Wait for approval",
                 "Receive your card",
-              ].map((s) => (
+              ].map((s, i) => (
                 <li key={s} className="flex items-start gap-3">
-                  <span className="mt-1 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-white/20">
-                    →
+                  <span
+                    className="mt-0.5 inline-flex h-7 w-7 flex-none shrink-0 items-center justify-center rounded-full bg-[#ea580c] text-xs font-semibold text-white"
+                    aria-hidden
+                  >
+                    {i + 1}
                   </span>
                   <span>{s}</span>
                 </li>

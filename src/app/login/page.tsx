@@ -32,7 +32,7 @@ export default function LoginPage() {
                 type="email"
                 autoComplete="email"
                 placeholder="name@example.com"
-                className="w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none ring-[#2E86FF] transition placeholder:text-zinc-400 focus:border-[#2E86FF] focus:ring-2"
+                className="w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none ring-[#ea580c] transition placeholder:text-zinc-400 focus:border-[#ea580c] focus:ring-2"
               />
             </div>
 
@@ -46,7 +46,7 @@ export default function LoginPage() {
                 </label>
                 <button
                   type="button"
-                  className="text-sm font-medium text-[#2E86FF] hover:text-[#2E86FF]/90"
+                  className="text-sm font-medium text-[#ea580c] hover:text-[#c2410c]"
                 >
                   Forgot password?
                 </button>
@@ -57,7 +57,7 @@ export default function LoginPage() {
                 type="password"
                 autoComplete="current-password"
                 placeholder="••••••••"
-                className="w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none ring-[#2E86FF] transition placeholder:text-zinc-400 focus:border-[#2E86FF] focus:ring-2"
+                className="w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-sm outline-none ring-[#ea580c] transition placeholder:text-zinc-400 focus:border-[#ea580c] focus:ring-2"
               />
             </div>
 
@@ -66,7 +66,7 @@ export default function LoginPage() {
                 id="remember"
                 name="remember"
                 type="checkbox"
-                className="h-4 w-4 rounded border-zinc-300 text-[#2E86FF] focus:ring-[#2E86FF]"
+                className="h-4 w-4 rounded border-zinc-300 text-[#ea580c] focus:ring-[#ea580c]"
               />
               <label htmlFor="remember" className="text-sm text-zinc-600">
                 Keep me signed in
@@ -75,7 +75,7 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-[#2E86FF] py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#2E86FF]/90"
+              className="w-full rounded-lg bg-[#ea580c] py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#c2410c]"
             >
               Sign in
             </button>
@@ -85,7 +85,7 @@ export default function LoginPage() {
             Don&apos;t have an account?{" "}
             <button
               type="button"
-              className="font-semibold text-[#2E86FF] hover:text-[#2E86FF]/90"
+              className="font-semibold text-[#ea580c] hover:text-[#c2410c]"
             >
               Create account
             </button>

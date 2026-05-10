@@ -19,7 +19,7 @@ export default function ContactPage() {
             <p className="text-center text-sm font-medium text-zinc-600">
               Contact
             </p>
-            <h1 className="mt-3 text-center text-4xl font-semibold tracking-tight text-black md:text-5xl">
+            <h1 className="mt-3 text-center text-4xl font-semibold tracking-tight text-zinc-900 md:text-5xl">
               Get In Touch
             </h1>
             <p className="mx-auto mt-4 max-w-lg text-center text-sm leading-6 text-zinc-600">

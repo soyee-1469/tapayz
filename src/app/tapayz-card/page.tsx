@@ -7,7 +7,7 @@ export default function TapayzCardPage() {
             <p className="text-sm font-medium text-zinc-600">
               Cryptocurrency meets everyday convenience
             </p>
-            <h1 className="mt-3 text-4xl font-semibold tracking-tight text-[#2E86FF] md:text-5xl">
+            <h1 className="mt-3 text-4xl font-semibold tracking-tight text-[#ea580c] md:text-5xl">
               ANYTAP CARD
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-700">
@@ -18,9 +18,9 @@ export default function TapayzCardPage() {
           </div>
           <div className="flex w-full min-w-0 justify-center">
             <img
-              src="/images/anytap-card-product.png"
+              src="/images/anypay_img3.png"
               alt="Anytap card"
-              className="h-auto w-full max-w-md object-contain md:max-w-lg"
+              className="mx-auto h-auto w-full max-w-[19.6rem] object-contain md:max-w-[22.4rem]"
             />
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function TapayzCardPage() {
 
       <section className="bg-white">
         <div className="mx-auto w-full min-w-0 max-w-6xl px-6 py-16 sm:px-8">
-          <h2 className="text-center text-2xl font-semibold tracking-tight">
+          <h2 className="text-center text-2xl font-semibold tracking-tight text-zinc-900">
             Fees &amp; Limits
           </h2>
           {/* Mobile: card list (prevents horizontal page scroll) */}
@@ -94,7 +94,7 @@ export default function TapayzCardPage() {
             Top up your card with cryptocurrency
           </h2>
 
-          <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-4 text-sm sm:grid-cols-2 md:grid-cols-5">
+          <div className="mx-auto mt-10 grid w-full max-w-6xl grid-cols-2 gap-4 text-sm md:grid-cols-3 md:gap-5 lg:grid-cols-5 lg:gap-4">
             {[
               "Select your preferred card type",
               "Fill in your name and make your first recharge",
@@ -104,22 +104,24 @@ export default function TapayzCardPage() {
             ].map((t, idx) => (
               <div
                 key={t}
-                className="rounded-xl bg-white/10 p-4 text-center"
+                className="flex min-w-0 flex-col items-stretch rounded-xl bg-white/10 p-4 text-left sm:p-5"
               >
-                <div className="mx-auto mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-xs font-semibold">
-                  {idx + 1}
+                <img
+                  src={`/images/anytapcard_img${idx + 1}.png`}
+                  alt=""
+                  className="mb-3 h-[11.2rem] w-full self-center object-contain sm:h-56 md:h-[16.8rem] lg:h-[9.8rem]"
+                />
+                <div className="flex w-full items-center justify-start gap-2.5 text-xs leading-snug text-white/90 sm:gap-3 sm:text-sm">
+                  <span
+                    className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#ea580c] text-xs font-semibold leading-none text-white"
+                    aria-hidden
+                  >
+                    {idx + 1}
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug">{t}</span>
                 </div>
-                <div className="text-white/90">{t}</div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-10 flex w-full min-w-0 justify-center px-0">
-            <img
-              src="/images/diagram-card-activation-flow.png"
-              alt="Card activation and top-up steps"
-              className="h-auto w-full max-w-full rounded-xl object-contain shadow-lg md:max-w-4xl"
-            />
           </div>
         </div>
       </section>

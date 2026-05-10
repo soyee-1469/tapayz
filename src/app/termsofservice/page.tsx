@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
             By accessing or using the Services, you agree to be bound by these
             Terms. If you do not agree, do not use the Services.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             1. Eligibility and accounts
           </h2>
           <p>
@@ -27,7 +27,7 @@ export default function TermsOfServicePage() {
             for products we offer. You are responsible for safeguarding your
             account credentials and for all activity under your account.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             2. Services and changes
           </h2>
           <p>
@@ -35,7 +35,7 @@ export default function TermsOfServicePage() {
             any time. Card issuance, limits, fees, and availability are subject
             to partner networks, applicable law, and our policies.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             3. Acceptable use
           </h2>
           <p>
@@ -43,7 +43,7 @@ export default function TermsOfServicePage() {
             circumvent security, interfere with other users, or use the
             Services for unlawful purposes.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             4. Disclaimers and limitation of liability
           </h2>
           <p>
@@ -51,12 +51,12 @@ export default function TermsOfServicePage() {
             law. To the extent permitted by law, we disclaim warranties and
             limit our liability for indirect or consequential damages.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             5. Contact
           </h2>
           <p>
             For questions about these Terms, please use the{" "}
-            <a href="/contact" className="font-medium text-[#2E86FF] hover:underline">
+            <a href="/contact" className="font-medium text-[#ea580c] hover:underline">
               Contact
             </a>{" "}
             page.

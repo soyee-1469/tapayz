@@ -94,21 +94,22 @@ export function SiteHeader() {
   }, [open, isDesktop]);
 
   return (
-    <header className="sticky top-0 z-50 w-full min-w-0 overflow-x-hidden bg-white/75 backdrop-blur dark:bg-black/40">
-      <div className="relative z-[60] mx-auto flex w-full min-w-0 max-w-6xl items-center justify-between gap-3 bg-white/75 px-4 py-4 backdrop-blur sm:px-6 dark:bg-black/40">
+    <header className="sticky top-0 z-50 w-full min-w-0 overflow-x-hidden bg-white/90 backdrop-blur dark:bg-black/40">
+      <div className="relative z-[60] mx-auto flex w-full min-w-0 max-w-6xl items-center justify-between gap-3 bg-white/90 px-4 py-4 backdrop-blur sm:px-6 dark:bg-black/40">
         <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2">
           <Image
-            src="/images/logo-anytap.png"
+            src="/images/anytap_logo500.png"
             alt="Anytap"
-            width={82}
-            height={22}
+            width={500}
+            height={134}
+            className="h-6 w-auto"
             priority
           />
         </Link>
 
         {/* Desktop: centered horizontal links (>=1200px via CSS) */}
         <nav
-          className="anytap-desktop-nav min-w-0 flex-1 items-center justify-center gap-3 text-sm text-zinc-700 sm:gap-4 dark:text-zinc-200"
+          className="anytap-desktop-nav min-w-0 flex-1 items-center justify-center gap-3 text-sm text-zinc-800 sm:gap-4 dark:text-zinc-200"
           aria-label="Main"
         >
           {navItems.map((item) => (
@@ -128,7 +129,7 @@ export function SiteHeader() {
           </Link>
           <Link
             href="/contact"
-            className="ml-1 shrink-0 rounded-md bg-[#2E86FF] px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-[#2E86FF]/90 sm:ml-2"
+            className="ml-1 shrink-0 rounded-md bg-[#ea580c] px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-[#c2410c] sm:ml-2"
           >
             Sign up
           </Link>
@@ -180,7 +181,7 @@ export function SiteHeader() {
               </Link>
               <Link
                 href="/contact"
-                className="rounded-lg bg-[#2E86FF] px-3 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#2E86FF]/90"
+                className="rounded-lg bg-[#ea580c] px-3 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#c2410c]"
               >
                 Sign up
               </Link>

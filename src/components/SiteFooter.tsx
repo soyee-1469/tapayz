@@ -4,7 +4,7 @@ export function SiteFooter() {
       <div className="mx-auto grid w-full min-w-0 max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-3">
         <div>
           <img
-            src="/images/logo-anytap.png"
+            src="/images/anytap_logo500.png"
             alt="Anytap"
             className="h-6 w-auto"
           />
@@ -28,7 +28,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <div className="text-sm font-semibold text-zinc-500">Legal</div>
+          <div className="text-sm font-semibold text-zinc-700">Legal</div>
           <ul className="mt-4 space-y-2">
             <li>
               <a

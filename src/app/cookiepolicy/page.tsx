@@ -14,7 +14,7 @@ export default function CookiePolicyPage() {
             uses cookies and similar technologies on our websites and related
             online services.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             1. What are cookies?
           </h2>
           <p>
@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
             websites function, remember preferences, measure performance, and
             improve security.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             2. How we use cookies
           </h2>
           <p>
@@ -31,7 +31,7 @@ export default function CookiePolicyPage() {
             aggregate usage, and, where permitted, cookies that support
             marketing measurement.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             3. Your choices
           </h2>
           <p>
@@ -39,12 +39,12 @@ export default function CookiePolicyPage() {
             certain cookies may affect site functionality. Where required by
             law, we will obtain consent before using non-essential cookies.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             4. Updates and contact
           </h2>
           <p>
             We may update this policy from time to time. For questions, use the{" "}
-            <a href="/contact" className="font-medium text-[#2E86FF] hover:underline">
+            <a href="/contact" className="font-medium text-[#ea580c] hover:underline">
               Contact
             </a>{" "}
             page.

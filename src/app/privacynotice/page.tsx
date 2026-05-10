@@ -15,7 +15,7 @@ export default function PrivacyNoticePage() {
             when you use our websites, applications, and related services
             related to the Anytap card program.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             1. Information we collect
           </h2>
           <p>
@@ -24,7 +24,7 @@ export default function PrivacyNoticePage() {
             required to offer financial products, device and usage data, and
             information from partners necessary to operate the Services.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             2. How we use information
           </h2>
           <p>
@@ -32,7 +32,7 @@ export default function PrivacyNoticePage() {
             identity, comply with legal obligations, prevent fraud, communicate
             with you, and analyze usage in aggregated form.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             3. Sharing
           </h2>
           <p>
@@ -40,7 +40,7 @@ export default function PrivacyNoticePage() {
             partners, and authorities when required by law or to protect rights
             and safety. We do not sell your personal information.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             4. Retention and security
           </h2>
           <p>
@@ -48,14 +48,14 @@ export default function PrivacyNoticePage() {
             apply reasonable safeguards. Retention periods may depend on legal
             and regulatory requirements.
           </p>
-          <h2 className="pt-4 text-lg font-semibold text-black">
+          <h2 className="pt-4 text-lg font-semibold text-zinc-900">
             5. Your choices and contact
           </h2>
           <p>
             Depending on your region, you may have rights to access, correct,
             or delete certain data. To exercise rights or ask questions, contact
             us via the{" "}
-            <a href="/contact" className="font-medium text-[#2E86FF] hover:underline">
+            <a href="/contact" className="font-medium text-[#ea580c] hover:underline">
               Contact
             </a>{" "}
             page.

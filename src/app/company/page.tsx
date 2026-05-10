@@ -5,7 +5,7 @@ export default function CompanyPage() {
         className="bg-[#efefef]"
         style={{
           backgroundImage:
-            'url("/images/company-hero-background.png")',
+            'url("/images/anytap_sub_img.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
