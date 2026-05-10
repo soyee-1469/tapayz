@@ -18,7 +18,7 @@ export default function TapayzCardPage() {
           </div>
           <div className="flex w-full min-w-0 justify-center">
             <img
-              src="/images/anypay_img3.png"
+              src="/images/500w/anypay_img3.png"
               alt="Anytap card"
               className="mx-auto h-auto w-full max-w-[19.6rem] object-contain md:max-w-[22.4rem]"
             />
@@ -28,6 +28,7 @@ export default function TapayzCardPage() {
 
       <section className="bg-white">
         <div className="mx-auto w-full min-w-0 max-w-6xl px-6 py-16 sm:px-8">
+          <div className="mx-auto w-full min-w-0 sm:max-w-[500px]">
           <h2 className="text-center text-2xl font-semibold tracking-tight text-zinc-900">
             Fees &amp; Limits
           </h2>
@@ -53,8 +54,8 @@ export default function TapayzCardPage() {
           </div>
 
           {/* Desktop/tablet: table */}
-          <div className="mt-8 hidden w-full overflow-x-auto sm:block [-webkit-overflow-scrolling:touch]">
-            <table className="min-w-[640px] w-full table-auto border-collapse text-sm">
+          <div className="mt-8 hidden w-full sm:block">
+            <table className="w-full table-auto border-collapse text-sm">
               <thead>
                 <tr className="border-b border-black/10 text-left text-zinc-500">
                   <th className="py-3 pr-6 font-semibold">
@@ -84,6 +85,7 @@ export default function TapayzCardPage() {
                 ))}
               </tbody>
             </table>
+          </div>
           </div>
         </div>
       </section>
