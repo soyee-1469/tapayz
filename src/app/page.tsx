@@ -97,7 +97,7 @@ export default function Home() {
             require.
           </p>
 
-          <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-8 md:grid-cols-4 md:gap-x-10">
+          <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-8">
             {(
               [
                 { n: 1, label: "Streamlined Membership Process" },
@@ -112,14 +112,14 @@ export default function Home() {
             ).map(({ n, label }) => (
               <div
                 key={n}
-                className="flex min-w-0 flex-col items-center gap-3 text-center"
+                className="flex min-w-0 flex-row items-center gap-3 text-left"
               >
                 <img
                   src={`/images/why_img${n}.png`}
                   alt=""
-                  className="h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20"
+                  className="h-12 w-12 shrink-0 object-contain sm:h-14 sm:w-14"
                 />
-                <p className="text-xs font-medium leading-snug text-white/95 sm:text-sm">
+                <p className="min-w-0 flex-1 text-xs font-medium leading-snug text-white/95 sm:text-sm">
                   {label}
                 </p>
               </div>
